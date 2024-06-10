@@ -1,0 +1,12 @@
+services:
+  prometheus:
+    image: prom/prometheus
+    network_mode: "host"
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+  
+  grafana:
+    image: grafana/grafana
+    network_mode: "host"
+    container_name: grafana
