@@ -319,17 +319,13 @@ Para finalizar a conexão, clique em 'Save & Test'.
 
 Para criar um dashboard, volte para o menu principal, clique em 'Dashboards' e depois em 'Create dashboard'.
 
-Após isso, adicione uma nova visualização, clique em 'Prometheus'.
+Após isso, clique em 'Import dashboard' para usar um template de visualização.
+Baixe o template em [https://grafana.com/api/dashboards/19924/revisions/4/download](https://grafana.com/api/dashboards/19924/revisions/4/download), e faça a importação dele no Grafana.
+
+Não se esqueça de selecionar o data source que foi criado anteriormente.
+
 ![alt text](./assets/image10.png)
 
-Selecione o data source criado anteriormente e insira a métrica `http_server_request_duration_seconds_count` na consulta de query.
-
-Deve se parecer com a imagem abaixo:
+O dashboard será exibido com as métricas coletadas.
 
 ![alt text](./assets/image11.png)
-
-Para finalizar, clique em 'Save' e insira o nome do dashboard.
-
-Você verá o dashboard com as métricas coletadas.
-
-![alt text](./assets/image12.png)
